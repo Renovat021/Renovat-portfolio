@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renovat Isezerano Bayavuge | IT Student & Back-End Developer</title>
+    <meta name="description" content="Portfolio of Renovat Isezerano Bayavuge, an Information Technology student at AUCA specializing in Back-End Development, Python, Java, Databases, and AI. A2SV Scholar.">
+    <meta name="keywords" content="Renovat Isezerano Bayavuge, AUCA, A2SV, Software Developer Rwanda, IT Student Kigali, Python, Back-End Developer Java, Portfolio">
+    <meta name="author" content="Renovat Isezerano Bayavuge">
+    
+    <!-- Open Graph / Social Media Meta -->
+    <meta property="og:title" content="Renovat Isezerano Bayavuge | Software Developer Portfolio">
+    <meta property="og:description" content="IT Student at AUCA | Aspiring Back-End Developer & AI Enthusiast based in Kigali, Rwanda. A2SV Scholar (120+ LeetCode solved).">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./assets/avatar.jpg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Background Ambient Glow & Geometric Elements -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="bg-grid-overlay"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar-header" id="navbar">
+        <div class="nav-container container">
+            <a href="#hero" class="nav-brand">
+                <span class="brand-code">&lt;</span>
+                <span class="brand-text">Renovat<span class="dot">.</span>dev</span>
+                <span class="brand-code">/&gt;</span>
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link"><i class="fa-regular fa-user"></i> About</a></li>
+                    <li><a href="#education" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+                    <li><a href="#certifications" class="nav-link"><i class="fa-solid fa-certificate"></i> Programs</a></li>
+                    <li><a href="#skills" class="nav-link"><i class="fa-solid fa-code"></i> Skills</a></li>
+                    <li><a href="#projects" class="nav-link"><i class="fa-solid fa-folder-open"></i> Projects</a></li>
+                    <li><a href="#contact" class="nav-link"><i class="fa-regular fa-paper-plane"></i> Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Color Theme" title="Switch Deep Emerald / Warm Cream Theme">
+                    <i class="fa-solid fa-moon icon-moon"></i>
+                    <i class="fa-solid fa-sun icon-sun"></i>
+                </button>
+                
+                <button class="btn btn-outline nav-cv-btn" id="openResumeModalBtn">
+                    <i class="fa-solid fa-file-arrow-down"></i> Resume
+                </button>
+
+                <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Navigation Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section (Split-Screen Layout) -->
+        <section class="hero-section" id="hero">
+            <div class="container hero-container">
+                <!-- Hero Left: Bio & CTAs -->
+                <div class="hero-content">
+                    <div class="status-pill hero-badge">
+                        <span class="status-dot pulse"></span>
+                        <span>Available for Internships & Projects</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="text-gradient">Renovat Isezerano</span>
+                        <span class="waving-hand">👋</span>
+                    </h1>
+
+                    <h2 class="hero-tagline">
+                        <span class="typewriter-text" id="typewriter">IT Student | Aspiring Back-End Developer & AI Enthusiast</span>
+                    </h2>
+
+                    <p class="hero-description">
+                        7th-semester Information Management student at <strong>AUCA</strong> & <strong>A2SV Scholar</strong>, passionate about building robust back-end systems, solving algorithmic challenges (120+ LeetCode solved), and exploring Artificial Intelligence.
+                    </p>
+
+                    <div class="hero-meta">
+                        <span class="meta-item"><i class="fa-solid fa-location-dot"></i> Kicukiro, Kigali, Rwanda</span>
+                        <span class="meta-item"><i class="fa-solid fa-university"></i> 7th Sem @ AUCA</span>
+                        <span class="meta-item text-emerald"><i class="fa-solid fa-award"></i> A2SV Member (Jan 2026)</span>
+                    </div>
+
+                    <div class="hero-cta-group">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>Explore Projects</span>
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Get In Touch</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </a>
+                        <button class="btn btn-outline" id="heroResumeBtn">
+                            <i class="fa-solid fa-file-pdf"></i>
+                            <span>Download CV</span>
+                        </button>
+                    </div>
+
+                    <div class="hero-socials">
+                        <span class="social-label">Connect with me:</span>
+                        <div class="social-links">
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon" title="GitHub Profile">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" title="LinkedIn Profile">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a href="mailto:renovatisezerano@gmail.com" class="social-icon" title="Email Renovat">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                            <a href="tel:+250789610141" class="social-icon" title="Call Renovat">
+                                <i class="fa-solid fa-phone"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Right: Interactive IDE Terminal Window & Photo Badge -->
+                <div class="hero-visual">
+                    <div class="terminal-card">
+                        <div class="terminal-header">
+                            <div class="terminal-dots">
+                                <span class="dot dot-red"></span>
+                                <span class="dot dot-yellow"></span>
+                                <span class="dot dot-green"></span>
+                            </div>
+                            <div class="terminal-tabs">
+                                <button class="tab-btn active" data-tab="java">Renovat.java</button>
+                                <button class="tab-btn" data-tab="json">profile.json</button>
+                                <button class="tab-btn" data-tab="terminal">bash ~</button>
+                            </div>
+                            <div class="terminal-actions">
+                                <button class="copy-code-btn" id="copyCodeBtn" title="Copy code snippet">
+                                    <i class="fa-regular fa-copy"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Tab Content 1: Java / Code -->
+                        <div class="terminal-body tab-content active" id="tab-java">
+                            <pre><code><span class="token-keyword">public class</span> <span class="token-class">Developer</span> {
+    <span class="token-keyword">private</span> String name = <span class="token-string">"Renovat Isezerano Bayavuge"</span>;
+    <span class="token-keyword">private</span> String university = <span class="token-string">"AUCA (Rwanda)"</span>;
+    <span class="token-keyword">private int</span> semester = <span class="token-number">7</span>;
+    <span class="token-keyword">private</span> String academy = <span class="token-string">"A2SV (Jan 2026)"</span>;
+    <span class="token-keyword">private int</span> leetCodeSolved = <span class="token-number">120</span>;
+    <span class="token-keyword">private</span> String[] skills = {
+        <span class="token-string">"Python (89%)"</span>, <span class="token-string">"Java"</span>, <span class="token-string">"MySQL"</span>, <span class="token-string">"PHP"</span>, <span class="token-string">"JavaScript"</span>
+    };
+
+    <span class="token-keyword">public void</span> <span class="token-function">buildFuture</span>() {
+        System.out.println(<span class="token-string">"Solving complex algorithmic challenges!"</span>);
+    }
+}</code></pre>
+                        </div>
+
+                        <!-- Tab Content 2: JSON Profile -->
+                        <div class="terminal-body tab-content" id="tab-json">
+                            <pre><code>{
+  <span class="token-string">"name"</span>: <span class="token-string">"Renovat Isezerano Bayavuge"</span>,
+  <span class="token-string">"title"</span>: <span class="token-string">"IT Student / Back-End Developer"</span>,
+  <span class="token-string">"semester"</span>: <span class="token-number">7</span>,
+  <span class="token-string">"program"</span>: <span class="token-string">"A2SV (Africa to Silicon Valley)"</span>,
+  <span class="token-string">"leetcode_solved"</span>: <span class="token-string">"120+ Problems"</span>,
+  <span class="token-string">"python_proficiency"</span>: <span class="token-string">"89/100"</span>,
+  <span class="token-string">"location"</span>: <span class="token-string">"Kicukiro, Kigali, Rwanda"</span>
+}</code></pre>
+                        </div>
+
+                        <!-- Tab Content 3: Mini Interactive Console -->
+                        <div class="terminal-body tab-content" id="tab-terminal">
+                            <div class="console-output" id="consoleOutput">
+                                <div class="log-line text-muted">Renovat OS v2.4 (x86_64-auca-rwanda)</div>
+                                <div class="log-line">Type <span class="highlight">help</span> or click command buttons below.</div>
+                            </div>
+                            <div class="console-input-row">
+                                <span class="prompt-symbol">renovat@kigali:~$</span>
+                                <input type="text" class="console-input" id="consoleInput" placeholder="type a command..." autocomplete="off">
+                            </div>
+                            <div class="console-quick-cmds">
+                                <button class="cmd-pill" data-cmd="skills">skills</button>
+                                <button class="cmd-pill" data-cmd="a2sv">a2sv</button>
+                                <button class="cmd-pill" data-cmd="projects">projects</button>
+                                <button class="cmd-pill" data-cmd="clear">clear</button>
+                            </div>
+                        </div>
+
+                        <div class="terminal-footer">
+                            <div class="terminal-status">
+                                <span class="status-indicator"></span>
+                                <span>UTF-8</span>
+                                <span>Python 3.11</span>
+                                <span>Java 17</span>
+                                <span>Kigali GMT+2</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Floating Tech Badge Widget -->
+                    <div class="floating-badge hero-float-card">
+                        <div class="float-icon">
+                            <i class="fa-solid fa-code text-emerald"></i>
+                        </div>
+                        <div class="float-info">
+                            <span class="float-title">LeetCode Mastery</span>
+                            <span class="float-sub">120+ Problems Solved</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section class="section about-section" id="about">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <span class="section-subtitle">Get To Know Me</span>
+                    <h2 class="section-title">About <span class="text-gradient">Renovat</span></h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="about-grid">
+                    <!-- Bio Narrative Card -->
+                    <div class="about-card bio-card reveal">
+                        <div class="card-glass-glow"></div>
+                        <h3 class="card-heading"><i class="fa-solid fa-user-gear"></i> Passion & Drive</h3>
+                        <p class="about-text">
+                            I am a passionate Information Technology student pursuing a Bachelor's degree in Information Management at the <strong>Adventist University of Central Africa (AUCA)</strong>, currently in my <strong>seventh semester</strong>.
+                        </p>
+                        <p class="about-text">
+                            I am focused on building strong coding and problem-solving skills, with a growing interest in Artificial Intelligence and back-end development. Through rigorous training at <strong>A2SV (Africa to Silicon Valley)</strong>, I am honing my expertise in algorithms, data structures, and optimal system logic.
+                        </p>
+                        <p class="about-text">
+                            I aim to contribute to my country and the world by enhancing my technical expertise, collaborating with driven peers, and solving real-world challenges through software.
+                        </p>
+
+                        <!-- Key Pillars Grid -->
+                        <div class="pillars-grid">
+                            <div class="pillar-item">
+                                <div class="pillar-icon"><i class="fa-solid fa-server"></i></div>
+                                <h4>Back-End Focus</h4>
+                                <p>Logic, API design, & database modeling</p>
+                            </div>
+                            <div class="pillar-item">
+                                <div class="pillar-icon"><i class="fa-solid fa-brain"></i></div>
+                                <h4>AI Enthusiast</h4>
+                                <p>Fascinated by machine learning & smart systems</p>
+                            </div>
+                            <div class="pillar-item">
+                                <div class="pillar-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                                <h4>Problem Solver</h4>
+                                <p>120+ LeetCode algorithmic solutions</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Profile Photo & Stats Column -->
+                    <div class="about-stats-column reveal">
+                        <div class="avatar-box">
+                            <img src="./assets/avatar.jpg" alt="Renovat Isezerano Bayavuge Profile Photo" class="profile-img">
+                            <div class="avatar-border"></div>
+                        </div>
+
+                        <div class="stats-counters-grid">
+                            <div class="stat-box">
+                                <span class="stat-number">7th</span>
+                                <span class="stat-label">Semester @ AUCA</span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-number">120+</span>
+                                <span class="stat-label">LeetCode Solved</span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-number">89%</span>
+                                <span class="stat-label">Python Mastery</span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-number">5+</span>
+                                <span class="stat-label">Projects Built</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section (Timeline) -->
+        <section class="section education-section" id="education">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <span class="section-subtitle">Academic Journey</span>
+                    <h2 class="section-title">My <span class="text-gradient">Education</span></h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="timeline-wrapper reveal">
+                    <div class="timeline-line"></div>
+
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <div class="timeline-content card">
+                            <div class="timeline-badge">2024 – Expected 2027 (Current)</div>
+                            <h3 class="timeline-title">Bachelor's Degree in IT / Information Management</h3>
+                            <h4 class="timeline-institution">
+                                <i class="fa-solid fa-building-columns"></i> Adventist University of Central Africa (AUCA)
+                            </h4>
+                            <p class="timeline-desc">
+                                Currently in <strong>7th semester</strong>. Gaining rigorous theoretical and practical experience in Information Technology management, object-oriented programming (Java/Python), database systems (MySQL/Oracle), web engineering, and software design principles.
+                            </p>
+                            <div class="timeline-tags">
+                                <span class="tech-tag">Information Management</span>
+                                <span class="tech-tag">Python & Java OOP</span>
+                                <span class="tech-tag">Database Systems</span>
+                                <span class="tech-tag">7th Semester</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+                        <div class="timeline-content card">
+                            <div class="timeline-badge">2020 – 2023</div>
+                            <h3 class="timeline-title">Advanced Level Certificate (A-Level)</h3>
+                            <h4 class="timeline-institution">
+                                <i class="fa-solid fa-school"></i> Ecole des Sciences de Nyamagabe
+                            </h4>
+                            <p class="timeline-desc">
+                                Completed Advanced Level studies under the <strong>MCB (Mathematics, Chemistry, Biology)</strong> combination. Built a solid analytical foundation in mathematics and scientific logic that sparked my enthusiasm for computing.
+                            </p>
+                            <div class="timeline-tags">
+                                <span class="tech-tag">MCB Combination</span>
+                                <span class="tech-tag">Mathematics & Logic</span>
+                                <span class="tech-tag">Scientific Methodology</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot">
+                            <i class="fa-solid fa-book-open"></i>
+                        </div>
+                        <div class="timeline-content card">
+                            <div class="timeline-badge">2017 – 2019</div>
+                            <h3 class="timeline-title">Ordinary Level Certificate (O-Level)</h3>
+                            <h4 class="timeline-institution">
+                                <i class="fa-solid fa-church"></i> Petit Séminaire Saint Jean Paul II de Gikongoro
+                            </h4>
+                            <p class="timeline-desc">
+                                Completed Ordinary Level education with distinction, developing strong academic discipline, teamwork, and problem-solving habits.
+                            </p>
+                            <div class="timeline-tags">
+                                <span class="tech-tag">O-Level Certificate</span>
+                                <span class="tech-tag">General Academics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications & Programs Section (A2SV Featured) -->
+        <section class="section certs-section" id="certifications">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <span class="section-subtitle">Elite Training & Academies</span>
+                    <h2 class="section-title">Certifications & <span class="text-gradient">Programs</span></h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="certs-wrapper reveal">
+                    <!-- Featured Program Card: A2SV -->
+                    <div class="a2sv-card card">
+                        <div class="a2sv-badge-row">
+                            <span class="status-pill"><i class="fa-solid fa-star text-emerald"></i> Selective Academy</span>
+                            <span class="a2sv-date"><i class="fa-regular fa-calendar-check"></i> Joined January 2026</span>
+                        </div>
+                        
+                        <div class="a2sv-content-grid">
+                            <div class="a2sv-main">
+                                <div class="a2sv-logo-title">
+                                    <div class="a2sv-icon"><i class="fa-solid fa-globe"></i></div>
+                                    <div>
+                                        <h3>A2SV — Africa to Silicon Valley</h3>
+                                        <span class="a2sv-tagline">Software Engineering & Tech Leadership Academy</span>
+                                    </div>
+                                </div>
+                                <p class="a2sv-desc">
+                                    Joined in January 2026. A2SV is a premier nonprofit tech academy that trains high-potential African university students in rigorous software engineering skills (advanced algorithms, data structures, and systemic problem-solving) and connects them with internship and full-time opportunities at top global tech companies like <strong>Google, Amazon, and Bloomberg</strong>.
+                                </p>
+                            </div>
+
+                            <div class="a2sv-highlights">
+                                <h4>Program Focus & Competencies</h4>
+                                <ul>
+                                    <li><i class="fa-solid fa-check text-emerald"></i> Data Structures & Complex Algorithms</li>
+                                    <li><i class="fa-solid fa-check text-emerald"></i> Competitive Problem Solving & Time Complexity Analysis</li>
+                                    <li><i class="fa-solid fa-check text-emerald"></i> Mock Technical Interviews & Global Engineering Standards</li>
+                                    <li><i class="fa-solid fa-check text-emerald"></i> Direct Pipeline to Global Tech Internships</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section class="section skills-section" id="skills">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <span class="section-subtitle">Technical Proficiency</span>
+                    <h2 class="section-title">Skills & <span class="text-gradient">Competencies</span></h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <!-- LeetCode Problem Solving Highlight Mini-Section -->
+                <div class="leetcode-banner card reveal">
+                    <div class="leetcode-header">
+                        <div class="leetcode-icon">
+                            <i class="fa-solid fa-code-compare"></i>
+                        </div>
+                        <div class="leetcode-info">
+                            <h3>LeetCode / Algorithmic Problem Solving</h3>
+                            <p>Demonstrated problem-solving ability with <strong>120+ problems solved</strong> across arrays, strings, trees, dynamic programming, and graph algorithms.</p>
+                        </div>
+                        <div class="leetcode-stat-pill">
+                            <span class="stat-count">120+</span>
+                            <span class="stat-sub">Problems Solved</span>
+                        </div>
+                    </div>
+                    <div class="leetcode-breakdown">
+                        <div class="lc-tag lc-easy"><span class="dot-easy"></span> Easy: 50+</div>
+                        <div class="lc-tag lc-med"><span class="dot-med"></span> Medium: 60+</div>
+                        <div class="lc-tag lc-hard"><span class="dot-hard"></span> Hard: 10+</div>
+                        <div class="lc-tag lc-a2sv"><i class="fa-solid fa-award"></i> A2SV Algorithmic Track</div>
+                    </div>
+                </div>
+
+                <!-- Skill Filter Tabs -->
+                <div class="skills-filter-row reveal">
+                    <button class="filter-btn active" data-filter="all">All Skills</button>
+                    <button class="filter-btn" data-filter="languages">Languages</button>
+                    <button class="filter-btn" data-filter="databases">Databases & Web</button>
+                    <button class="filter-btn" data-filter="interests">Core Interests</button>
+                </div>
+
+                <!-- Skills Grid with Progress Bars & Visual Indicators -->
+                <div class="skills-grid reveal">
+
+                    <!-- Skill 1: Python (UPDATED WITH 89% PROFICIENCY) -->
+                    <div class="skill-card card" data-category="languages">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrap python-icon">
+                                <i class="fa-brands fa-python"></i>
+                            </div>
+                            <div class="skill-name-wrap">
+                                <h3>Python</h3>
+                                <span class="skill-level-badge badge-glow">Advanced Proficiency</span>
+                            </div>
+                            <span class="skill-percent">89%</span>
+                        </div>
+                        <p class="skill-detail">Algorithmic problem solving, data structures, scripting, back-end automation, and AI fundamentals.</p>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill" style="width: 89%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 2: Java -->
+                    <div class="skill-card card" data-category="languages">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrap java-icon">
+                                <i class="fa-brands fa-java"></i>
+                            </div>
+                            <div class="skill-name-wrap">
+                                <h3>Java</h3>
+                                <span class="skill-level-badge badge-glow">Intermediate (Focus)</span>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <p class="skill-detail">Object-Oriented Programming, Data Structures, Core Java principles. Currently advancing in back-end Java.</p>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill" style="width: 80%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 3: HTML & CSS -->
+                    <div class="skill-card card" data-category="languages databases">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrap html-icon">
+                                <i class="fa-brands fa-html5"></i>
+                            </div>
+                            <div class="skill-name-wrap">
+                                <h3>HTML & CSS</h3>
+                                <span class="skill-level-badge">Advanced</span>
+                            </div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <p class="skill-detail">Semantic HTML5, CSS Grid/Flexbox, responsive UI design, glassmorphic themes, animations.</p>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill" style="width: 90%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 4: JavaScript -->
+                    <div class="skill-card card" data-category="languages">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrap js-icon">
+                                <i class="fa-brands fa-js"></i>
+                            </div>
+                            <div class="skill-name-wrap">
+                                <h3>JavaScript (ES6+)</h3>
+                                <span class="skill-level-badge">Intermediate</span>
+                            </div>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <p class="skill-detail">DOM manipulation, async operations, API integration, interactive client-side logic.</p>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill" style="width: 75%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 5: MySQL -->
+                    <div class="skill-card card" data-category="databases">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrap mysql-icon">
+                                <i class="fa-solid fa-database"></i>
+                            </div>
+                            <div class="skill-name-wrap">
+                                <h3>MySQL</h3>
+                                <span class="skill-level-badge">Intermediate</span>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <p class="skill-detail">Relational database design, SQL queries, indexing, foreign keys, PHP-MySQL integration.</p>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill" style="width: 85%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 6: Oracle Database -->
+                    <div class="skill-card card" data-category="databases">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrap oracle-icon">
+                                <i class="fa-solid fa-server"></i>
+                            </div>
+                            <div class="skill-name-wrap">
+                                <h3>Oracle Database</h3>
+                                <span class="skill-level-badge">Intermediate</span>
+                            </div>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <p class="skill-detail">Enterprise relational database concepts, PL/SQL fundamentals, schema management.</p>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill" style="width: 75%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 7: C Programming -->
+                    <div class="skill-card card" data-category="languages">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrap c-icon">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <div class="skill-name-wrap">
+                                <h3>C Programming</h3>
+                                <span class="skill-level-badge">Basics</span>
+                            </div>
+                            <span class="skill-percent">60%</span>
+                        </div>
+                        <p class="skill-detail">Foundational memory management, pointers, and low-level programming concepts.</p>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 8: Back-End Development -->
+                    <div class="skill-card card" data-category="interests">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrap backend-icon">
+                                <i class="fa-solid fa-layer-group"></i>
+                            </div>
+                            <div class="skill-name-wrap">
+                                <h3>Back-End Architecture</h3>
+                                <span class="skill-level-badge badge-glow">Core Interest</span>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <p class="skill-detail">System design, server-side data processing, user authentication, and business logic execution.</p>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill" style="width: 85%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 9: Artificial Intelligence -->
+                    <div class="skill-card card" data-category="interests">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrap ai-icon">
+                                <i class="fa-solid fa-robot"></i>
+                            </div>
+                            <div class="skill-name-wrap">
+                                <h3>Artificial Intelligence</h3>
+                                <span class="skill-level-badge badge-glow">Emerging Interest</span>
+                            </div>
+                            <span class="skill-percent">72%</span>
+                        </div>
+                        <p class="skill-detail">Exploring AI fundamentals, prompt engineering, machine learning concepts, and smart software tools.</p>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill" style="width: 72%;"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Current Focus Spotlight Banner -->
+                <div class="focus-banner card reveal">
+                    <div class="focus-glow"></div>
+                    <div class="focus-icon">
+                        <i class="fa-solid fa-bullseye"></i>
+                    </div>
+                    <div class="focus-text">
+                        <h3>Currently Focused On:</h3>
+                        <p>Advancing <strong>Java Programming</strong> & high-performance algorithmic problem solving with <strong>A2SV</strong>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section (5 PROJECTS TOTAL) -->
+        <section class="section projects-section" id="projects">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <span class="section-subtitle">Featured Work (5 Systems)</span>
+                    <h2 class="section-title">My <span class="text-gradient">Projects</span></h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="projects-grid reveal">
+
+                    <!-- Project Card 1: Lost and Found Portal -->
+                    <article class="project-card card" data-project="lostfound">
+                        <div class="project-image-wrap">
+                            <img src="./assets/lost_found.jpg" alt="Lost and Found Portal Web Platform" class="project-img">
+                            <div class="project-overlay">
+                                <button class="btn btn-primary btn-sm open-modal-btn" data-modal="lostfoundModal">
+                                    <i class="fa-solid fa-eye"></i> View Details
+                                </button>
+                            </div>
+                            <div class="project-badge">Full Stack System</div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tech-stack">
+                                <span class="tech-pill">HTML5</span>
+                                <span class="tech-pill">CSS3</span>
+                                <span class="tech-pill">JavaScript</span>
+                                <span class="tech-pill">MySQL</span>
+                                <span class="tech-pill">PHP</span>
+                            </div>
+                            <h3 class="project-title">Lost and Found Portal</h3>
+                            <p class="project-description">
+                                A community-oriented web platform that helps people recover lost items and enables finders to safely return them to their rightful owners.
+                            </p>
+                            <ul class="project-highlights">
+                                <li><i class="fa-solid fa-check text-emerald"></i> Designed full system architecture & database schema</li>
+                                <li><i class="fa-solid fa-check text-emerald"></i> User registration, item posting, & search filters</li>
+                                <li><i class="fa-solid fa-check text-emerald"></i> Item ownership verification workflow</li>
+                            </ul>
+                            <div class="project-footer">
+                                <button class="btn btn-secondary btn-sm open-modal-btn" data-modal="lostfoundModal">
+                                    <span>Architecture & Demo</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 2: GoRent Car Rental System -->
+                    <article class="project-card card" data-project="gorent">
+                        <div class="project-image-wrap">
+                            <img src="./assets/gorent.jpg" alt="GoRent Car Rental Web System" class="project-img">
+                            <div class="project-overlay">
+                                <button class="btn btn-primary btn-sm open-modal-btn" data-modal="gorentModal">
+                                    <i class="fa-solid fa-eye"></i> View Details
+                                </button>
+                            </div>
+                            <div class="project-badge">Vehicle Marketplace</div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tech-stack">
+                                <span class="tech-pill">HTML5</span>
+                                <span class="tech-pill">CSS3</span>
+                                <span class="tech-pill">JavaScript</span>
+                                <span class="tech-pill">MySQL</span>
+                                <span class="tech-pill">PHP</span>
+                            </div>
+                            <h3 class="project-title">GoRent – Car Rental System</h3>
+                            <p class="project-description">
+                                A web-based platform connecting vehicle owners wanting to rent out their cars with customers seeking reliable rentals.
+                            </p>
+                            <ul class="project-highlights">
+                                <li><i class="fa-solid fa-check text-emerald"></i> Interactive vehicle catalog & reservation workflows</li>
+                                <li><i class="fa-solid fa-check text-emerald"></i> User authentication & role management</li>
+                                <li><i class="fa-solid fa-check text-emerald"></i> Car listing management backend</li>
+                            </ul>
+                            <div class="project-footer">
+                                <button class="btn btn-secondary btn-sm open-modal-btn" data-modal="gorentModal">
+                                    <span>Architecture & Demo</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 3: AI Code Assistant & Inspector -->
+                    <article class="project-card card" data-project="project3">
+                        <div class="project-image-wrap">
+                            <img src="./assets/project3.jpg" alt="AI Code Assistant Project" class="project-img">
+                            <div class="project-overlay">
+                                <button class="btn btn-primary btn-sm open-modal-btn" data-modal="project3Modal">
+                                    <i class="fa-solid fa-eye"></i> View Details
+                                </button>
+                            </div>
+                            <div class="project-badge">AI & Developer Tools</div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tech-stack">
+                                <span class="tech-pill">Python</span>
+                                <span class="tech-pill">JavaScript</span>
+                                <span class="tech-pill">MySQL</span>
+                                <span class="tech-pill">API Integration</span>
+                            </div>
+                            <h3 class="project-title">AI Code Inspector</h3>
+                            <p class="project-description">
+                                An intelligent web tool designed to inspect Python code snippets, highlight complexity bottlenecks, and generate optimized algorithmic suggestions.
+                            </p>
+                            <ul class="project-highlights">
+                                <li><i class="fa-solid fa-check text-emerald"></i> Automated syntax & complexity checking</li>
+                                <li><i class="fa-solid fa-check text-emerald"></i> Python AST parsing & prompt engineering</li>
+                                <li><i class="fa-solid fa-check text-emerald"></i> Interactive syntax error breakdown dashboard</li>
+                            </ul>
+                            <div class="project-footer">
+                                <button class="btn btn-secondary btn-sm open-modal-btn" data-modal="project3Modal">
+                                    <span>Architecture & Demo</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 4: Algorithm & Data Structure Visualizer -->
+                    <article class="project-card card" data-project="project4">
+                        <div class="project-image-wrap">
+                            <img src="./assets/project4.jpg" alt="Algorithm Visualizer Project" class="project-img">
+                            <div class="project-overlay">
+                                <button class="btn btn-primary btn-sm open-modal-btn" data-modal="project4Modal">
+                                    <i class="fa-solid fa-eye"></i> View Details
+                                </button>
+                            </div>
+                            <div class="project-badge">EdTech & Algorithms</div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tech-stack">
+                                <span class="tech-pill">Python</span>
+                                <span class="tech-pill">JavaScript</span>
+                                <span class="tech-pill">HTML5 Canvas</span>
+                                <span class="tech-pill">CSS3</span>
+                            </div>
+                            <h3 class="project-title">AlgoVisualizer Platform</h3>
+                            <p class="project-description">
+                                An interactive web tool for visualizing sorting algorithms, binary search trees, and graph traversals in real-time.
+                            </p>
+                            <ul class="project-highlights">
+                                <li><i class="fa-solid fa-check text-emerald"></i> Step-by-step visual animation for array sorting</li>
+                                <li><i class="fa-solid fa-check text-emerald"></i> Time & space complexity comparisons</li>
+                                <li><i class="fa-solid fa-check text-emerald"></i> Custom speed & array size controls</li>
+                            </ul>
+                            <div class="project-footer">
+                                <button class="btn btn-secondary btn-sm open-modal-btn" data-modal="project4Modal">
+                                    <span>Architecture & Demo</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 5: Smart Campus Services Portal -->
+                    <article class="project-card card" data-project="project5">
+                        <div class="project-image-wrap">
+                            <img src="./assets/project5.jpg" alt="Smart Campus Portal Project" class="project-img">
+                            <div class="project-overlay">
+                                <button class="btn btn-primary btn-sm open-modal-btn" data-modal="project5Modal">
+                                    <i class="fa-solid fa-eye"></i> View Details
+                                </button>
+                            </div>
+                            <div class="project-badge">Enterprise Web App</div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tech-stack">
+                                <span class="tech-pill">Java</span>
+                                <span class="tech-pill">PHP</span>
+                                <span class="tech-pill">MySQL</span>
+                                <span class="tech-pill">JavaScript</span>
+                            </div>
+                            <h3 class="project-title">Smart Campus Portal</h3>
+                            <p class="project-description">
+                                A centralized university management prototype streamlining student course registrations, academic schedules, and department announcements.
+                            </p>
+                            <ul class="project-highlights">
+                                <li><i class="fa-solid fa-check text-emerald"></i> Multi-tier student & administrative dashboard</li>
+                                <li><i class="fa-solid fa-check text-emerald"></i> MySQL database schema with course relations</li>
+                                <li><i class="fa-solid fa-check text-emerald"></i> Automated timetable generator</li>
+                            </ul>
+                            <div class="project-footer">
+                                <button class="btn btn-secondary btn-sm open-modal-btn" data-modal="project5Modal">
+                                    <span>Architecture & Demo</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <span class="section-subtitle">Let's Connect</span>
+                    <h2 class="section-title">Get In <span class="text-gradient">Touch</span></h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Left: Contact Details & Links -->
+                    <div class="contact-info-col reveal">
+                        <div class="contact-card card">
+                            <h3><i class="fa-solid fa-paper-plane text-emerald"></i> Contact Information</h3>
+                            <p class="contact-subtext">
+                                Feel free to reach out for internship opportunities, project collaborations, or tech discussions!
+                            </p>
+
+                            <div class="contact-methods">
+                                <!-- Phone -->
+                                <div class="contact-method-item">
+                                    <div class="method-icon"><i class="fa-solid fa-phone"></i></div>
+                                    <div class="method-details">
+                                        <span class="method-label">Phone Call / WhatsApp</span>
+                                        <a href="tel:+250789610141" class="method-value">+250 789 610 141</a>
+                                    </div>
+                                    <button class="copy-btn" data-copy="+250789610141" title="Copy phone number">
+                                        <i class="fa-regular fa-copy"></i>
+                                    </button>
+                                </div>
+
+                                <!-- Email -->
+                                <div class="contact-method-item">
+                                    <div class="method-icon"><i class="fa-solid fa-envelope"></i></div>
+                                    <div class="method-details">
+                                        <span class="method-label">Email Address</span>
+                                        <a href="mailto:renovatisezerano@gmail.com" class="method-value">renovatisezerano@gmail.com</a>
+                                    </div>
+                                    <button class="copy-btn" data-copy="renovatisezerano@gmail.com" title="Copy email address">
+                                        <i class="fa-regular fa-copy"></i>
+                                    </button>
+                                </div>
+
+                                <!-- Location -->
+                                <div class="contact-method-item">
+                                    <div class="method-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                    <div class="method-details">
+                                        <span class="method-label">Location</span>
+                                        <span class="method-value">Kicukiro, Kigali, Rwanda</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contact-social-box">
+                                <h4>Follow & Connect</h4>
+                                <div class="social-pills">
+                                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-pill">
+                                        <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+                                    </a>
+                                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-pill">
+                                        <i class="fa-brands fa-github"></i> GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Interactive Contact Form -->
+                    <div class="contact-form-col reveal">
+                        <form class="contact-form card" id="contactForm">
+                            <h3><i class="fa-regular fa-comment-dots text-emerald"></i> Send a Message</h3>
+                            
+                            <div class="form-group">
+                                <label for="contactName">Your Name</label>
+                                <div class="input-with-icon">
+                                    <i class="fa-regular fa-user"></i>
+                                    <input type="text" id="contactName" name="name" placeholder="e.g. John Doe" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contactEmail">Your Email</label>
+                                <div class="input-with-icon">
+                                    <i class="fa-regular fa-envelope"></i>
+                                    <input type="email" id="contactEmail" name="email" placeholder="e.g. john@example.com" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contactSubject">Subject</label>
+                                <div class="input-with-icon">
+                                    <i class="fa-solid fa-heading"></i>
+                                    <input type="text" id="contactSubject" name="subject" placeholder="Project Inquiry / Internship" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contactMessage">Message</label>
+                                <textarea id="contactMessage" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block" id="submitFormBtn">
+                                <span>Send Message</span>
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+
+                            <div class="form-status" id="formStatus"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <span class="brand-code">&lt;</span>
+                <span class="brand-text">Renovat<span class="dot">.</span>dev</span>
+                <span class="brand-code">/&gt;</span>
+                <p>Building reliable back-end software, mastering algorithms, and exploring AI from Kigali, Rwanda.</p>
+            </div>
+            
+            <div class="footer-links">
+                <a href="#hero">Home</a>
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#certifications">A2SV Program</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="footer-copy">
+                <p>&copy; <span id="currentYear">2026</span> Renovat Isezerano Bayavuge. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back To Top Button -->
+    <button class="back-to-top" id="backToTopBtn" aria-label="Scroll back to top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <!-- ==================== MODALS ==================== -->
+
+    <!-- Modal 1: Lost and Found Details Modal -->
+    <div class="modal-backdrop" id="lostfoundModal">
+        <div class="modal-container card">
+            <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+            <div class="modal-header">
+                <span class="modal-category">Project Deep Dive</span>
+                <h2>Lost and Found Portal</h2>
+            </div>
+            <div class="modal-body">
+                <img src="./assets/lost_found.jpg" alt="Lost and Found Portal Details" class="modal-hero-img">
+                
+                <h3>Project Overview</h3>
+                <p>The Lost and Found Portal is a centralized community platform designed to bridge the gap between people who have lost valuable items (IDs, electronics, documents) and honest finders looking to safely return them.</p>
+
+                <h3>System Architecture & Technical Stack</h3>
+                <div class="modal-tech-grid">
+                    <div class="tech-item"><i class="fa-brands fa-html5"></i> <strong>Front-End:</strong> HTML5, CSS3, JavaScript (DOM Manipulation & Form Validation)</div>
+                    <div class="tech-item"><i class="fa-solid fa-code"></i> <strong>Back-End:</strong> PHP server scripts for request routing & session handling</div>
+                    <div class="tech-item"><i class="fa-solid fa-database"></i> <strong>Database:</strong> MySQL (Relational tables for Users, Lost Items, Found Claims, Categories)</div>
+                </div>
+
+                <h3>Key Responsibilities & Accomplishments</h3>
+                <ul>
+                    <li>Designed and normalized the relational database schema with foreign keys ensuring data integrity.</li>
+                    <li>Built user authentication & session management allowing users to track their reported items.</li>
+                    <li>Implemented instant keyword filtering allowing users to search by category, location, and date lost.</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary modal-close-action">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2: GoRent Details Modal -->
+    <div class="modal-backdrop" id="gorentModal">
+        <div class="modal-container card">
+            <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+            <div class="modal-header">
+                <span class="modal-category">Project Deep Dive</span>
+                <h2>GoRent – Car Rental System</h2>
+            </div>
+            <div class="modal-body">
+                <img src="./assets/gorent.jpg" alt="GoRent Car Rental System Details" class="modal-hero-img">
+                
+                <h3>Project Overview</h3>
+                <p>GoRent is a web application designed to connect car owners with potential renters. Car owners can register their vehicles, set daily rates, and manage availability, while customers can browse available vehicles and submit rental requests.</p>
+
+                <h3>System Architecture & Technical Stack</h3>
+                <div class="modal-tech-grid">
+                    <div class="tech-item"><i class="fa-brands fa-js"></i> <strong>Front-End:</strong> Responsive HTML, CSS3 animations, Vanilla JS dynamic rendering</div>
+                    <div class="tech-item"><i class="fa-solid fa-server"></i> <strong>Back-End:</strong> PHP business logic & authentication middleware</div>
+                    <div class="tech-item"><i class="fa-solid fa-database"></i> <strong>Database:</strong> MySQL (Tables for Vehicles, Owners, Customers, Bookings)</div>
+                </div>
+
+                <h3>Key Responsibilities & Accomplishments</h3>
+                <ul>
+                    <li>Engineered multi-role authentication (Car Owner vs. Customer interfaces).</li>
+                    <li>Created an interactive vehicle catalog with specs filtering (transmission, fuel, seating capacity).</li>
+                    <li>Implemented backend logic to prevent double-booking on overlapping calendar dates.</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary modal-close-action">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3: AI Code Assistant Details Modal -->
+    <div class="modal-backdrop" id="project3Modal">
+        <div class="modal-container card">
+            <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+            <div class="modal-header">
+                <span class="modal-category">Project Deep Dive</span>
+                <h2>AI Code Inspector</h2>
+            </div>
+            <div class="modal-body">
+                <img src="./assets/project3.jpg" alt="AI Code Inspector Details" class="modal-hero-img">
+                
+                <h3>Project Overview</h3>
+                <p>An intelligent software analysis tool designed to help developers inspect Python code, detect algorithmic inefficiency (nested loops, unindexed DB queries), and provide AI-generated syntax optimization suggestions.</p>
+
+                <h3>System Architecture & Technical Stack</h3>
+                <div class="modal-tech-grid">
+                    <div class="tech-item"><i class="fa-brands fa-python"></i> <strong>Core:</strong> Python 3.11 with Abstract Syntax Tree (AST) parsing</div>
+                    <div class="tech-item"><i class="fa-solid fa-brain"></i> <strong>AI Engine:</strong> OpenAI/Gemini API integration for natural language code explanations</div>
+                    <div class="tech-item"><i class="fa-brands fa-js"></i> <strong>UI:</strong> Dynamic HTML5, CSS3, and JavaScript front-end dashboard</div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary modal-close-action">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4: AlgoVisualizer Details Modal -->
+    <div class="modal-backdrop" id="project4Modal">
+        <div class="modal-container card">
+            <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+            <div class="modal-header">
+                <span class="modal-category">Project Deep Dive</span>
+                <h2>AlgoVisualizer Platform</h2>
+            </div>
+            <div class="modal-body">
+                <img src="./assets/project4.jpg" alt="AlgoVisualizer Details" class="modal-hero-img">
+                
+                <h3>Project Overview</h3>
+                <p>An educational visualizer platform built to demonstrate computer science algorithms visually in real-time, helping fellow university students understand sorting algorithms (QuickSort, MergeSort) and graph traversals (BFS, DFS).</p>
+
+                <h3>System Architecture & Technical Stack</h3>
+                <div class="modal-tech-grid">
+                    <div class="tech-item"><i class="fa-brands fa-python"></i> <strong>Algorithms:</strong> Python algorithm reference implementations & JS Canvas renderer</div>
+                    <div class="tech-item"><i class="fa-solid fa-sliders"></i> <strong>Controls:</strong> Async delay control, random array generation, step execution</div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary modal-close-action">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5: Smart Campus Portal Details Modal -->
+    <div class="modal-backdrop" id="project5Modal">
+        <div class="modal-container card">
+            <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+            <div class="modal-header">
+                <span class="modal-category">Project Deep Dive</span>
+                <h2>Smart Campus Portal</h2>
+            </div>
+            <div class="modal-body">
+                <img src="./assets/project5.jpg" alt="Smart Campus Portal Details" class="modal-hero-img">
+                
+                <h3>Project Overview</h3>
+                <p>A web portal prototype built for AUCA students to manage course registration, track semester credits, view course syllabi, and check exam schedules.</p>
+
+                <h3>System Architecture & Technical Stack</h3>
+                <div class="modal-tech-grid">
+                    <div class="tech-item"><i class="fa-brands fa-java"></i> <strong>Back-End:</strong> Java / PHP web controller handlers</div>
+                    <div class="tech-item"><i class="fa-solid fa-database"></i> <strong>Database:</strong> MySQL relational schema with student & course tables</div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary modal-close-action">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 6: Printable / Downloadable Resume Preview Modal -->
+    <div class="modal-backdrop" id="resumeModal">
+        <div class="modal-container card resume-modal-container">
+            <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+            
+            <div class="resume-toolbar">
+                <h3><i class="fa-solid fa-file-lines text-emerald"></i> Curriculum Vitae / Resume</h3>
+                <div class="resume-actions">
+                    <button class="btn btn-primary btn-sm" id="printResumeBtn">
+                        <i class="fa-solid fa-print"></i> Print / Save PDF
+                    </button>
+                    <button class="btn btn-outline btn-sm modal-close-action">
+                        <i class="fa-solid fa-xmark"></i> Close
+                    </button>
+                </div>
+            </div>
+
+            <div class="resume-document" id="resumeDocument">
+                <div class="cv-header">
+                    <h1>Renovat Isezerano Bayavuge</h1>
+                    <p class="cv-subtitle">IT Student | Aspiring Back-End Developer & AI Enthusiast | A2SV Scholar</p>
+                    <div class="cv-contact-bar">
+                        <span><i class="fa-solid fa-location-dot"></i> Kicukiro, Kigali, Rwanda</span> | 
+                        <span><i class="fa-solid fa-phone"></i> +250 789 610 141</span> | 
+                        <span><i class="fa-solid fa-envelope"></i> renovatisezerano@gmail.com</span>
+                    </div>
+                </div>
+
+                <hr class="cv-divider">
+
+                <section class="cv-section">
+                    <h2>Professional Summary</h2>
+                    <p>A passionate Information Technology student pursuing a Bachelor's degree in Information Management at Adventist University of Central Africa (AUCA), currently in my <strong>seventh semester</strong>. Member of <strong>A2SV (Africa to Silicon Valley)</strong>. Focused on building strong coding and problem-solving skills (120+ LeetCode problems solved), with a growing interest in Artificial Intelligence and back-end development.</p>
+                </section>
+
+                <section class="cv-section">
+                    <h2>Selective Programs & Academies</h2>
+                    <div class="cv-item">
+                        <div class="cv-item-header">
+                            <strong>A2SV (Africa to Silicon Valley) — Software Engineering Track</strong>
+                            <span>Joined Jan 2026</span>
+                        </div>
+                        <p>Nonprofit academy training high-potential African university students in software engineering (data structures, algorithms, problem solving) and connecting them to global tech internships (Google, Amazon, Bloomberg).</p>
+                    </div>
+                </section>
+
+                <section class="cv-section">
+                    <h2>Education</h2>
+                    <div class="cv-item">
+                        <div class="cv-item-header">
+                            <strong>Bachelor's Degree in IT / Information Management</strong>
+                            <span>2024 – Expected 2027</span>
+                        </div>
+                        <div class="cv-item-sub">Adventist University of Central Africa (AUCA), Kigali — 7th Semester</div>
+                    </div>
+                    <div class="cv-item">
+                        <div class="cv-item-header">
+                            <strong>Advanced Level Certificate (MCB: Math, Chemistry, Biology)</strong>
+                            <span>2020 – 2023</span>
+                        </div>
+                        <div class="cv-item-sub">Ecole des Sciences de Nyamagabe</div>
+                    </div>
+                    <div class="cv-item">
+                        <div class="cv-item-header">
+                            <strong>Ordinary Level Certificate</strong>
+                            <span>2017 – 2019</span>
+                        </div>
+                        <div class="cv-item-sub">Petit Séminaire Saint Jean Paul II de Gikongoro</div>
+                    </div>
+                </section>
+
+                <section class="cv-section">
+                    <h2>Technical Skills</h2>
+                    <ul>
+                        <li><strong>Programming Languages:</strong> Python (89/100 Proficiency), JavaScript (Intermediate), Java (Intermediate), C (Basics)</li>
+                        <li><strong>Problem Solving:</strong> 120+ LeetCode problems solved</li>
+                        <li><strong>Databases & Web:</strong> MySQL, Oracle Database, HTML5, CSS3</li>
+                        <li><strong>Core Interests:</strong> Back-End Software Architecture, Artificial Intelligence, Database Design</li>
+                    </ul>
+                </section>
+
+                <section class="cv-section">
+                    <h2>Projects</h2>
+                    <div class="cv-item">
+                        <div class="cv-item-header">
+                            <strong>Lost and Found Portal</strong>
+                            <span>HTML, CSS, JS, MySQL, PHP</span>
+                        </div>
+                        <p>Community platform helping recover lost items. Full database schema, user registration, and search logic.</p>
+                    </div>
+                    <div class="cv-item">
+                        <div class="cv-item-header">
+                            <strong>GoRent – Car Rental System</strong>
+                            <span>HTML, CSS, JS, MySQL, PHP</span>
+                        </div>
+                        <p>Car rental marketplace connecting vehicle owners and clients. Role authentication & booking workflows.</p>
+                    </div>
+                    <div class="cv-item">
+                        <div class="cv-item-header">
+                            <strong>AI Code Inspector</strong>
+                            <span>Python, JS, MySQL, API</span>
+                        </div>
+                        <p>Intelligent tool inspecting code syntax, complexity bottlenecks, and generating optimization advice.</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
